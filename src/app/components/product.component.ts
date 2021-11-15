@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Input, Output, SimpleChanges } from "@angular/core";
 import { Product} from "../product.model";
 
 @Component({
@@ -8,12 +8,25 @@ import { Product} from "../product.model";
 
 export class ProductComponent {
       
-    product: Product =
-        {
-          id: '1',
-          image: 'assets/images/camiseta.png',
-          title: 'Camiseta',
-          price: 80000,
-          description: 'bla bla bla bla bla'
-        };
+    @Input() product!: Product;
+    @Output() productClicked: EventEmitter<any> = new EventEmitter();
+
+    constructor() {
+        console.log('1. constructor')
+    }
+
+    ngOnChanges(changes: SimpleChanges) {
+        console.log('2. ngOnChanges');
+        console.log(changes);
+    }
+
+    ngOnInit(): void {
+       console.log('3. ngOnInit');
+    }
+
+    addCart() {
+        console.log('Añadir al carrito');
+        this.productClicked.emit(this.product.id);
+    }
+
  }
