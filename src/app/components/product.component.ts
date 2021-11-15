@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output, SimpleChanges } from "@angular/core";
+import { 
+    Component, 
+    EventEmitter, 
+    Input, 
+    Output, 
+    SimpleChanges
+ } from "@angular/core";
 import { Product} from "../product.model";
 
 @Component({
@@ -22,6 +28,15 @@ export class ProductComponent {
 
     ngOnInit(): void {
        console.log('3. ngOnInit');
+    }
+
+    ngDoCheck(): void {
+        console.log('4. ngDoCheck');
+        
+    }
+
+    ngOnDestroy(): void {
+        console.log('5. ngOnDestroy');
     }
 
     addCart() {
