@@ -2,8 +2,31 @@
 {{ title }}
 <br>
 <br>
+
+<app-product></app-product>
+
 <div *ngIf="title === 'Marcia' ">
-    este es un div
+    esta es Marcia
+</div>
+
+<div *ngIf="title === 'Gerónimo' ">
+    este es Gerónimo
+</div>
+
+<div *ngIf="title === 'Adrián' ">
+    este es Adrián
+</div>
+
+<div *ngIf="title === 'Samir' ">
+    este es Samir
+</div>
+
+<div [ngSwitch]="title">
+    <p *ngSwitchCase="'Marcia'">Esta es Marcia</p>
+    <p *ngSwitchCase="'Gerónimo'">Este es Gerónimo</p>
+    <p *ngSwitchCase="'Adrián'">Este es Adrián</p>
+    <p *ngSwitchCase="'Samir'">Este es Samir</p>
+    <p *ngSwitchDefault>No está en la lista</p>
 </div>
 
 <button (click)="addItem()">Add item</button>
