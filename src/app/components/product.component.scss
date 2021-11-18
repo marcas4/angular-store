@@ -7,7 +7,7 @@
     display: block ;
     margin-top: 0px;
     margin-bottom: 0px;
-    text-align: center;
+    //text-align: center;
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
 }
 
@@ -21,6 +21,7 @@ img {
     font-size: 1.4em;
     margin-inline: 30px;
     border-radius: 14px;
+    text-align: center;
    
   }
   
@@ -30,13 +31,14 @@ img {
     justify-content: center;
   }
 
-  .productDescription {
+  .productPrice {
     background-color: #188866;
     color: 	#FDF5E6;
     border-radius: 14px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 3px;
+    text-align: center;
   }
 
   .botonAgregar {

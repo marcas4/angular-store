@@ -3,11 +3,10 @@
         <h3 >{{ product.title | uppercase }}</h3>
     </div>
     <img class="productImage" [src]="product.image"alt="" />
-    <div class="productDescription">
-        <strong>{{ product.price | currency }}</strong>
+    <div class="productPrice">
+        <strong>{{ product.price | currency:'COP$ ' }}</strong>
     </div>
-    
-
+    <p>{{product.description | slice: 0:15 }}</p>
     <button class="botonAgregar" (click)="addCart()">Agregar al carrito</button>
   </div>
     
