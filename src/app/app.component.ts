@@ -11,6 +11,8 @@ export class AppComponent {
 
   items = ['Marcia', 'Samir', 'Adrián', 'Gerónimo'];
 
+  power = 10;
+
   products: Product[] = [
     {
       id: '1',
