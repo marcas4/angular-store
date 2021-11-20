@@ -7,7 +7,9 @@
         <strong>{{ product.price | currency:'COP$ ' }}</strong>
     </div>
     <p>{{product.description | slice: 0:15 }}</p>
+    <p>{{ today | date:'medium'}}</p>
     <button class="botonAgregar" (click)="addCart()">Agregar al carrito</button>
   </div>
     
 
+ 
