@@ -1,15 +1,5 @@
-  <div class="productBack">
-    <div class="productTitle">
-        <h3 >{{ product.title | uppercase }}</h3>
-    </div>
-    <img class="productImage" [src]="product.image"alt="" />
-    <div class="productPrice">
-        <strong>{{ product.price | currency:'COP$ ' }}</strong>
-    </div>
-    <p>{{product.description | slice: 0:15 }}</p>
-    <p>{{ today | date:'medium'}}</p>
-    <button class="botonAgregar" (click)="addCart()">Agregar al carrito</button>
-  </div>
+
+
     
 
  

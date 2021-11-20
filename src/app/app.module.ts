@@ -17,7 +17,6 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     ProductComponent,
     CartComponent,
-
     HomeComponent,
     ProductsComponent,
     ContactComponent
