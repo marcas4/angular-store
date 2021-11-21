@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../product.model';
 
 @Component({
@@ -65,5 +65,5 @@ export class ProductsComponent implements OnInit {
     console.log('product');
     console.log(id);
   } 
-
+ 
 }
