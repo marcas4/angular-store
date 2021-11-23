@@ -1,5 +1,3 @@
-<app-header></app-header>
-
 <div class="products-grid">
     <div class="productsFor" *ngFor="let product of products">
             <div class="productTitle">
@@ -12,6 +10,7 @@
             <p>{{product.description | slice: 0:15 }}</p>
         
             <button class="botonAgregar" >Agregar al carrito</button>
+            <a [routerLink]="['/products',product.id]" >Ver detalle</a>
     </div>
 </div>
 
