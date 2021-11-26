@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Product } from './product.model';
+import { Product } from 'src/app/product.model';
+
 
 @Injectable({
   providedIn: 'root'
