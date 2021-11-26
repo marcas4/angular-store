@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './components/product.component';
+import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 
 import { ProductsComponent } from './products/products.component';
@@ -27,7 +27,7 @@ import { CoreModule } from './core/core.module';
     ContactComponent,
     DemoComponent,
     PageNotFoundComponent,
-    //ProductDetailComponent,
+    ProductDetailComponent,
     LayoutComponent
   ],
   imports: [

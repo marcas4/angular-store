@@ -5,7 +5,8 @@ import {
     Output, 
     SimpleChanges
  } from "@angular/core";
-import { Product} from "../product.model";
+import { Product } from "../product.model";
+
 
 @Component({
     selector: 'app-product',
