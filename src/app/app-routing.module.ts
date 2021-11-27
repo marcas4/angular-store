@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AdminGuard } from './admin.guard';
 import { ContactComponent } from './contact/contact.component';
 import { DemoComponent } from './demo/demo.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
       },
       {
         path: 'contact',
+        canActivate: [AdminGuard],
         component: ContactComponent
       },
     ]
