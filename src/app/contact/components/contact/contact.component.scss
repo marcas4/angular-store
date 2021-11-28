@@ -1,0 +1,89 @@
+body {
+    background: #07da00;
+    margin: 0;
+  }
+  
+  .form {
+    width: 340px;
+    height: 440px;
+    //background: #e6e6e6;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px aqua;
+    //border-color: aqua;
+    margin: calc(50vh - 220px) auto;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+  }
+  
+
+  .title {
+    background-color: #188866;
+    color: 	#FDF5E6;
+    font-size: 1.4em;
+    margin-inline: -20px;
+    border-radius: 14px;
+    text-align: center;
+   
+  }
+ 
+  h1 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c;
+  }
+   
+  .form-group {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+    
+  }
+  .form-group:focus {
+    border-bottom: 2px solid #78788c;
+  }
+
+  button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid aquamarine;
+    background: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background: aqua;
+    color: rgb(13, 78, 64);
+  }
+
+
+  .row {
+    content: "Hi";
+    align-items: center;
+    bottom: 5px;
+    right: 2px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  
+  span {
+    margin: 0 5px 0 15px;
+  }
+ 
