@@ -11,5 +11,17 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem 3rem;
   }
+
+  @media (min-width: 576px) {
+
+    .container{
+      max-width: 1110px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+    
+  }
+
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
