@@ -7,12 +7,16 @@ footer {
   margin-top: 20px;
   //background-color: mat-color($primary);
   background-color: black;
+  color: white;
   .box {
     h3 {
       color: white;
     }
     input{
-      color: white;
+      color: rgb(255, 255, 255);
+    }
+    ::placeholder{
+      color:rgb(146, 144, 144);
     }
     ul {
       list-style: none;
@@ -27,4 +31,9 @@ footer {
       }
     }
   }
+
+  .email-camp {
+    background-color: rgb(29, 28, 28);    
+  }
+
 }
