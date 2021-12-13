@@ -10,6 +10,7 @@ import { ListProductsComponent } from './components/list-products/list-products.
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormProductComponent } from './components/form-product/form-product.com
     ListProductsComponent,
     DashboardComponent,
     ProductsListComponent,
-    FormProductComponent
+    FormProductComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,

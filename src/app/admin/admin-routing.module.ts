@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
+import { LoginComponent } from './components/login/login.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
       {
         path: 'products/create',
         component: FormProductComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
     ]
   }
